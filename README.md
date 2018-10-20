@@ -1,7 +1,16 @@
-# Parcel Boilerplate
+# Frontend Boilerplate
 
 - Has a Parcel based boilerplate in place
 - Has my usual `_fonts` and `_variables` sass files
+- Assumes that you have Parcel installed globally
+
+```bash
+# yarn global add parcel-bundler
+npm i -g parcel-bundler
+git clone git@github.com:aamnah/frontend-bolierplate.git
+cd frontend-bolierplate
+npm install
+```
 
 ```
 src/
