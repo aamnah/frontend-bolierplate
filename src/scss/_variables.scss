@@ -1,0 +1,15 @@
+// Colors
+$primary-color: teal;
+
+// Breakpoints
+$breakpoint_mobile: 480px;
+$breakpoint_tablet: 786px; 
+$breakpoint_desktop: 1080px;
+
+// Fonts
+// requires '_fonts' file to be imported before '_variables'
+$font_body: $font-family-sans-serif;
+$font_code: $font-family-code;
+$font_heading: $font_body;
+$font-strong: $font_body;
+$font-italic: $font_body;

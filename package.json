@@ -1,0 +1,17 @@
+{
+  "name": "Project",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir prod"
+  },
+  "keywords": [],
+  "author": "Aamnah <hello@aamnah.com> (https://aamnah.com/)",
+  "license": "CC BY-SA 4.0",
+  "devDependencies": {
+    "sass": "^1.14.3"
+  }
+}
