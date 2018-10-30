@@ -13,5 +13,8 @@
   "license": "CC BY-SA 4.0",
   "devDependencies": {
     "sass": "^1.14.3"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.10.3"
   }
 }
