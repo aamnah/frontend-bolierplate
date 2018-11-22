@@ -1,7 +1,7 @@
 # Frontend Boilerplate
 
 - Has a Parcel based boilerplate in place
-- Has my usual `_fonts` and `_variables` sass files
+- Has my usual `_reset`, `_fonts` and `_variables` sass partials
 - Assumes that you have Parcel installed globally
 
 ```bash
