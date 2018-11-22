@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font_body;
+  @include font_smoothing;
+  line-height: 1.6;
+  color: $color_body;
+}
+
+a {
+  color: $color_link;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  font-family: $font_heading;
+  line-height: 1.2;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+}
+
+li {
+  margin-left: 2em;
+}
+
+pre, code {
+  font-family: $font_code;
+}
+
+button {
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
