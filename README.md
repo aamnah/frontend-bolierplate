@@ -16,17 +16,17 @@ npm install
 ```
 
 ```
-src/
-├── img/
+src
 ├── index.html
-├── js/
+├── js
 │   └── main.js
-└── scss/
+└── scss
     ├── _fonts.scss
     ├── main.scss
+    ├── _reset.scss
     └── _variables.scss
 
-3 directories, 5 files
+2 directories, 6 files
 ```
 
 ## Dev
