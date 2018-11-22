@@ -1,6 +1,22 @@
 // Colors
 $primary-color: teal;
 
+$color_light: #f8f8f8;
+$color_dark: #172b4d;
+$color_blue: #64BBFF;
+$color_red: #fe5f55;
+$color_green: #25CC84;
+$color_yellow: #f6bd60;
+$color_pink: #cb429f;
+$color_hotPink: #f40076;
+$color_eggplant: #2c0e37;
+$color_purple: #690375;
+$color_navy: #001648;
+
+$color_link: navy;
+$color_body: $color_dark;
+$color_heading: $color_dark;
+
 // Breakpoints
 $breakpoint_mobile: 480px;
 $breakpoint_tablet: 786px; 
@@ -8,8 +24,10 @@ $breakpoint_desktop: 1080px;
 
 // Fonts
 // requires '_fonts' file to be imported before '_variables'
-$font_body: $font-family-sans-serif;
-$font_code: $font-family-code;
+$font_body: $font_family_sans_serif;
 $font_heading: $font_body;
-$font-strong: $font_body;
-$font-italic: $font_body;
+$font_code: $font_family_code;
+
+// DEFAULT STYLES
+$border_radius: 5px;
+$box_shadow: 5px 5px 15px rgba(0,0,0,.03);
