@@ -1,24 +1,4 @@
-@import 'fonts';
-@import 'variables';
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: $font_body;
-    @include font-smoothing;
-}
-
-h1 {
-    font-family: $font_heading;
-    color: $primary-color;
-}
-
-pre, code {
-    font-family: $font_code;
-}
+@import 'fonts'; // fonts go first
+@import 'variables'; // variables use the fonts file
+@import 'reset'; // reset uses variables
+@import 'utility';
