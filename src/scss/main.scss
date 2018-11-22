@@ -1,4 +1,4 @@
 @import 'fonts'; // fonts go first
 @import 'variables'; // variables use the fonts file
-@import 'reset'; // reset uses variables
-@import 'utility';
+@import 'mediaqueries';
+@import 'reset'; // reset uses variables & media query mixins

@@ -31,3 +31,8 @@ $font_code: $font_family_code;
 // DEFAULT STYLES
 $border_radius: 5px;
 $box_shadow: 5px 5px 15px rgba(0,0,0,.03);
+
+// BREAKPOINTS
+$breakpoint_phone: 480px;
+$breakpoint_tablet: 786px;
+$breakpoint_desktop: 1080px;

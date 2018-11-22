@@ -1,0 +1,31 @@
+/* Usage:
+.container {
+  @include phone {
+    padding: 1em;
+  }
+}
+*/
+
+@mixin phone {
+  @media screen and (max-width: $breakpoint_phone) {
+    @content
+  }
+};
+
+@mixin tablet {
+  @media screen and (min-width: $breakpoint_phone) and (max-width: $breakpoint_tablet) {
+    @content
+  }
+};
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint_tablet) and (max-width: $breakpoint_desktop) {
+    @content
+  }
+};
+
+@mixin wide {
+  @media screen and (min-width: $breakpoint_desktop) {
+    @content
+  }
+};
