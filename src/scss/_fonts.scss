@@ -2,50 +2,55 @@
 // for an explanation of font types and compatability
 // woff and otf/ttf are supported by everything except IE 8-11
 
-@mixin font-smoothing {
-    // Font Smoothing
-    font-smooth: always; // Non-standard CSS 
-    // https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
-    -webkit-font-smoothing: antialiased; // Webkit, only works on macOS
-    -moz-osx-font-smoothing: grayscale; // Firefox, only works on macOS
+@mixin font_smoothing {
+  // Font Smoothing
+  font-smooth: always; // Non-standard CSS 
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+  -webkit-font-smoothing: antialiased; // Webkit, only works on macOS
+  -moz-osx-font-smoothing: grayscale; // Firefox, only works on macOS
 }
-// usage: 
+// Usage: 
 // body {
 //   @include font-smothing;
 // }
 
-$font-family-sans-serif:
-  // Chrome < 56 for OS X (San Francisco)
-  BlinkMacSystemFont,
-  // Safari for macOS and iOS (San Francisco), older Mac OS X (Helvetica Neue/Lucida Grande)
-  -apple-system,
-    // Windows
-  "Segoe UI",
-  // Android and Chrome OS
-  "Roboto",
-  // KDE
-  Oxygen-Sans,
-  // Ubuntu
-  Ubuntu,
-  // GNOME
-  Cantarell,
-  // Firefox OS
-  "Fira Sans",
-  // Android (Old)
-  "Droid Sans",
-  // Basic web fallback (Arial is universally available)
-  "Helvetica Neue", Arial, sans-serif,
-  // Emoji fonts
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font_family_sans_serif:
+// Chrome < 56 for OS X (San Francisco)
+BlinkMacSystemFont,
+// Safari for macOS and iOS (San Francisco), older Mac OS X (Helvetica Neue/Lucida Grande)
+-apple-system,
+  // Windows
+"Segoe UI",
+// Android and Chrome OS
+"Roboto",
+// KDE
+Oxygen-Sans,
+// Ubuntu
+Ubuntu,
+// GNOME
+Cantarell,
+// Firefox OS
+"Fira Sans",
+// Android (Old)
+"Droid Sans",
+// Basic web fallback (Arial is universally available)
+"Helvetica Neue", Arial, sans-serif,
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
-$font-family-code: 
-  SFMono-Regular, // macOS, El Capitan +
-  Menlo, // Snow Leopard, replaced by SF Mono in El Capitan
-  Monaco, // OS X (primary till 2009 Snow Leopard)
-  Consolas, // Windows
-  Lucida Console, // Widnows
-  "Liberation Mono", // Linux
-  monospace;
+$font_family_code: 
+SFMono-Regular, // macOS, El Capitan +
+Menlo, // Snow Leopard, replaced by SF Mono in El Capitan
+Monaco, // OS X (primary till 2009 Snow Leopard)
+Consolas, // Windows
+'Lucida Console', // Widnows
+"Liberation Mono", // Linux
+monospace;
+
+$font_family_serif:
+'Times New Roman',
+serif;
+
 
 
 // SERIF STACK
