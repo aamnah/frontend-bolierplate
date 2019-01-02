@@ -37,5 +37,5 @@ src
 
 ## Build
 - `npm run build`
-- output dir: `prod`
+- output dir: `dist`
 - Minifies and compiles stuff for release
