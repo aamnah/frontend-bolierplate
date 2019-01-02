@@ -1,7 +1,3 @@
-// see: https://gist.github.com/aamnah/52630097e3992906b0507fff5d9ac4ef
-// for an explanation of font types and compatability
-// woff and otf/ttf are supported by everything except IE 8-11
-
 @mixin font_smoothing {
   // Font Smoothing
   font-smooth: always; // Non-standard CSS 
@@ -15,11 +11,11 @@
 // }
 
 $font_family_sans_serif:
-// Chrome < 56 for OS X (San Francisco)
-BlinkMacSystemFont,
 // Safari for macOS and iOS (San Francisco), older Mac OS X (Helvetica Neue/Lucida Grande)
 -apple-system,
-  // Windows
+// Chrome < 56 for OS X (San Francisco)
+BlinkMacSystemFont,
+// Windows
 "Segoe UI",
 // Android and Chrome OS
 "Roboto",
@@ -38,6 +34,18 @@ Cantarell,
 // Emoji fonts
 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
+// Github, Medium, WordPress, Booking.com, Bootstrap and more uses a native 'system fonts' stack
+// Oxygen Sans, Ubuntu and Cantarell are being used by Medium and WordPress native stacks
+
+// OS 10.0 - 10.9 - Lucida Grande
+// OS 10.10 - 10.11 - Helvetica Neue
+// OS 10.12 - San Francisco
+
+// https://css-tricks.com/snippets/css/system-font-stack/
+// https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+// https://medium.design/system-shock-6b1dc6d6596f
+
 $font_family_code: 
 SFMono-Regular, // macOS, El Capitan +
 Menlo, // Snow Leopard, replaced by SF Mono in El Capitan
@@ -47,17 +55,9 @@ Consolas, // Windows
 "Liberation Mono", // Linux
 monospace;
 
+// https://www.client9.com/css-system-font-stack-monospace-v2/
+
+
 $font_family_serif:
 'Times New Roman',
 serif;
-
-
-
-// SERIF STACK
-// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-// https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f
-// https://medium.design/system-shock-6b1dc6d6596f
-// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-
-// MONOSPACE STACK
-// https://www.client9.com/css-system-font-stack-monospace-v2/
